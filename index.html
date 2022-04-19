@@ -1,9 +1,88 @@
-<html>
-  <head>
-    <title>My blog</title>
-  <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1> 
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Daniela's Page</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <style>
+    .hero{background-image: url("images/lake2.jpg");}
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav__list">
+        <li><a href="#home" class = "active">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!--Hero-->
+    <section class="hero">
+      <h1 class="hero-title">Daniela's Page</h1>
+      <h3 class="hero-subtitle">My Tech Journey</h3>
+    </section>
+
+    <!--Introduction-->
+    <section class = "intro" id = "home">
+      <h2 class ="section__title section__title--intro">Welcome to my blog page!</h2>
+      <p class = "section__subtitle section__subtitle--intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, cupiditate hic minus doloribus esse in natus temporibus qui nulla provident quae. Quidem repellat dolores quam.</p>
+    </section>
+
+    <!--About Me-->
+    <section class = "about-me" id = "about">
+      <h2 class = "section__title section__title--about">Who I am</h2>
+      
+      <div class = "about-me__body">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat possimus nemo perferendis eius neque! Cumque, vero. Ratione in et aspernatur a modi provident voluptate explicabo ipsam, illum quibusdam beatae repudiandae quod eaque commodi fugit facilis itaque officiis fuga iure repellat.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam voluptates laborum saepe officia officiis quos exercitationem cumque quam repellendus id, explicabo perferendis excepturi quas dolore nobis nemo, neque labore nam consequuntur nulla? Dolorem modi aliquid, ullam fugiat delectus distinctio exercitationem.</p>
+      </div>
+      <img src = "images/me2.jpeg" class = "about-me__img" alt="picture of myself">
+    </section>
+
+    <!--Blog-->
+    <section class = "blog" id = "blog">
+      <div class = "my-blog">
+        <h2 class = "section__title section__title--blog">My Blog</h2>
+        <p class = "section__subtitle section__subtitle--blog">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, labore!</p>
+      </div>
+      <div class = "sidebar">
+        <h3 class = "sidebar__title">Blog Posts</h3>
+        <a href="blog/te-houtaewa-template.html" target="_blank" class="blog-entry__item">18 Apr 22, Te-Houtaewa-template</a>
+        <a href="blog/te-houtaewa-template.html" target="_blank" class="blog-entry__item">Second Blog</a>
+        <a href="blog/te-houtaewa-template.html" target="_blank" class="blog-entry__item">Third Blog</a>
+        <a href="blog/te-houtaewa-template.html" target="_blank" class="blog-entry__item">Fourth Blog</a>
+        <a href="blog/te-houtaewa-template.html" target="_blank" class="blog-entry__item">Fifth Blog</a>        
+      </div>
+    </section>
+
+  </main>
+
+
+  <!--Footer-->
+  <footer class = "footer">
+    
+    <a href="mailto:daniela.vonarb@gmail.com" class="footer__link">daniela.vonarb@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-facebook"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-linkedin"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-github"></i></a></li>
+    </ul>
+  </footer>
+  
+</body>
 </html>
