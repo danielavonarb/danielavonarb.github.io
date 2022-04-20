@@ -29,7 +29,7 @@
   --fs-h4: 1.5rem;
   --fs-body: 1rem;
 
-  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+  --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, 0.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
@@ -70,6 +70,15 @@ section{
 img{
   display: block;
   max-width: 100%;
+  box-shadow: var(--bs);
+}
+
+.printscreen__images{
+  width: 600px;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em; 
+  box-shadow: var(--bs);
 }
 
 /* Typography */
@@ -219,7 +228,7 @@ main{
 
 .about-me__img{
   max-width: 100%;
-  box-shadow: var(--bs)
+  box-shadow: var(--bs);
 }
 
 @media (min-width: 600px) {
@@ -381,14 +390,6 @@ main{
   color: var(--clr-f-light);
 }
 
-/* Styles individual blog page */
-
-.printscreen__images{
-  width: 600px;
-  height: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;  
-}
 
 
 
