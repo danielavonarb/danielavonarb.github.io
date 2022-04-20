@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Concepts</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href = "../styles/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,400&family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <style>
+    .hero{background-image: url("../images/services-bg.jpg");}
+  </style>
+
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav__list">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../index.html#about">About Me</a></li>
+        <li><a href="../index.html#blog">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+  <!--Hero-->
+  <section class="hero">
+    <h1 class="hero-title">Daniela's Blog</h1>
+    <h3 class="hero-subtitle">CSS Concepts</h3>
+  </section>
+
+  <main>
+
+    <!--Introduction-->
+    <section class = "intro">
+      <h2 class ="section__title--intro">Let's talk about CSS Concepts!</h2>
+      <p class = "section__subtitle--intro">In this blog I'm going to talk about a concept in CSS that covers classes and ID's. As a beginner developer it can be a bit confusing when to use them and understand the difference between the two. I hope this post will bring you some clarity.</p>
+    </section>
+
+    <!--Blog Content-->
+    <section class="intro">
+      <h3 class ="section__title--intro">Best Practices - Classes vs. ID's</h3>
+      <div class = "blog-content__body">
+        <h4>CSS Selectors</h4>
+        <p>First we need to understand what CSS selectors are.</p>
+        <p>When designing a web page, you will want certain styles to apply to specific elements on the page. 
+          For instance, you may want to set the text color of all <strong>`p`</strong> tags to green.</p>
+        <img src = "../images/printscreen_1.png" class = "printscreen__images" alt="">
+        <p>Selectors allow you to target specific elements on a web page that you can apply styles to. 
+          Two selectors, <strong>`class`</strong> and <strong>`id`</strong> , are used to apply styles to elements based on the class and ID assigned to an HTML element, respectively.</p>
+        <h4>The ID selector is uniqe</h4>
+        <p>The ID selector allows you to define style rules that apply to a <strong>single</strong> element on the web page. Each web page can only have one element with a single <strong>ID attribute</strong>. This means the ID selector can never be used to style more than one element. Back to our first example, let's say we only want the first paragraph to turn green. We do this by assigning an ID attribute to the paragraph. In CSS, we target the ID by using the <strong>`#`</strong> key.</p>
+        <img src = "../images/printscreen_2.png" class = "printscreen__images" alt="">
+        <h4>The Class selector is not unique</h4>
+        <p>A class selector allows you to define style rules that apply to <strong>any element</strong> with a class attribute equal to a certain value. In our awesome paragraph example we have two classes now. One for <strong>team-green</strong> and one for <strong>team-red</strong>. Notice how we target the class name with the <strong>`.`</strong> key.</p>
+        <img src = "../images/printscreen_3.png" class = "printscreen__images" alt="">
+        <h4>Conclusion</h4>
+        <p>When you're working with CSS, there are no specific reasons forcing you to use an ID over a class. However, it is best practice to only use IDs if you want a style to apply to one element on the web page, and to use classes if you want a style to apply to multiple elements.</p>
+      </div>
+    </section>
+
+
+  </main>
+
+  <!--Footer-->
+  <footer class = "footer">
+  
+    <a href="mailto:daniela.vonarb@gmail.com" class="footer__link">daniela.vonarb@gmail.com</a>
+    <ul class="social-list">
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-facebook"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-linkedin"></i></a></li>
+        <li class="social-list__item"><a class="social-list__link" href="#"><i class = "fab fa-github"></i></a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>
