@@ -77,14 +77,6 @@ img{
   box-shadow: var(--bs);
 }
 
-.printscreen__images{
-  width: 600px;
-  height: auto;
-  margin-top: 1em;
-  margin-bottom: 1em; 
-  box-shadow: var(--bs);
-}
-
 /* Typography */
 
 h1,
@@ -280,12 +272,18 @@ main{
 .blog{
   background-color: #e0d4eb;
   background-image: url(../images/services-bg.jpg);
+  background-size: cover;
+  background-position: center bottom;
   font-family: var(--ff-secondary);
   color: var(--clr-f-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
   height: 40vh;
+}
+
+.sidebar{
+  padding: 1em;
 }
 
 .sidebar__title{
@@ -320,14 +318,14 @@ main{
 
 @media (min-width: 800px) {
   .blog{
+    height: 50vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-      "my-blog sidebar"
       "my-blog sidebar";
     display: flex;
     flex-direction: row;
-    justify-content: space-around;    
+    justify-content: space-around;
   }
 
   .my-blog{
@@ -345,12 +343,6 @@ main{
   }
   .section__subtitle--blog{
     width: 40ch;
-  }
-}
-
-@media (min-width: 1200px) {
-  .section__subtitle--blog{
-    width: 60ch;
   }
 }
 
@@ -397,7 +389,14 @@ main{
 
 .paragraph-list{
   margin-left: 2em;
+}
 
+.printscreen__images{
+  width: 600px;
+  height: auto;
+  margin-top: 1em;
+  margin-bottom: 1em; 
+  box-shadow: var(--bs);
 }
 
 
