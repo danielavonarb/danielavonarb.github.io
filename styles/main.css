@@ -285,7 +285,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 50vh;
+  height: 40vh;
 }
 
 .sidebar__title{
@@ -293,7 +293,11 @@ main{
   font-family: var(--ff-secondary);
 }
 
-.blog-entry__item{
+.blog-list{
+  margin-left: 1.5em;
+}
+
+.blog-entry__link{
   display: block;
   padding-left: 0.5em;
   color: var(--clr-f-light);
@@ -302,7 +306,7 @@ main{
   line-height: 1.8;
   transition: transform 200ms ease-in-out;
 }
-.blog-entry__item:hover{
+.blog-entry__link:hover{
   transform: scale(1.1);
   opacity: 0.5;
 }
