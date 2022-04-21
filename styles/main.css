@@ -129,13 +129,19 @@ h4{
 body{
   display:grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto 50vh auto auto;
+  grid-template-rows: auto 40vh auto auto;
   height: 100vh;
   grid-template-areas: 
   'header'
   'hero'
   'main'
   'footer';
+}
+
+@media (min-width: 900px) {
+  body{
+    grid-template-rows: auto 50vh auto auto;
+  }
 }
 
 /* Header */
@@ -205,13 +211,17 @@ main{
 @media (min-width: 800px) {
   .section__subtitle--intro,
   .blog-content__body{
-    width: 70ch;
+    width: 60ch;
   }
 }
 
 @media (min-width: 900px) {
   .intro{
     width: 80%;
+  }
+  .section__subtitle--intro,
+  .blog-content__body{
+    width: 70ch;
   }
 }
 
