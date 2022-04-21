@@ -361,7 +361,12 @@ main{
 
 .footer__link {
   font-weight: var(--fw-bold);
-  color: var(--clr-light); 
+  color: var(--clr-f-light); 
+  font-family: var(--ff-secondary);
+}
+
+.footer__text{
+  color: var(--clr-f-light);
 }
 
 .social-list__link:hover {
