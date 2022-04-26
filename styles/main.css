@@ -289,7 +289,7 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 40vh;
+  height: 50vh;
 }
 
 .sidebar{
@@ -412,6 +412,15 @@ main{
   margin-top: 1em;
   margin-bottom: 1em; 
   box-shadow: var(--bs);
+}
+
+.paragraph-link{
+  font-weight: var(--fw-bold);
+  color: var(--clr-accent-three);
+}
+
+.paragraph-link:hover {
+  opacity: .7;
 }
 
 
