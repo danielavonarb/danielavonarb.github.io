@@ -49,8 +49,8 @@
     <section class="intro">
       <h3 class ="section__title--intro">JavaScript Fundamentals</h3>
       <div class = "blog-content__body">
-        <h4>Differences between HTML and CSS</h4>
-        <p>Imagine building a house. You need to build the structure, the fundament first. But how sad looking would this house be without any design, color, nice layout, etc.? The relationship between HTML and CSS is quite similar really. To build the structure (the skeleton) of a website we use HTML. With HTML, we write the content of the page. Without CSS, our page would pretty much look like a Word document. With CSS, we apply all the fancy styles to our page. These two combined create beautifully looking and user friendly websites.</p>
+        <h4>Relationship between JS, HTML and CSS</h4>
+        <p>Imagine building a house. You need to build the structure, the fundament first. But how sad looking would this house be without any design, color, nice layout, etc.? The relationship between HTML and CSS is quite similar really. To build the structure (the skeleton) of a website we use HTML. With HTML, we write the content of the page. Without CSS, our page would pretty much look like a Word document. With CSS, we apply all the fancy styles to our page. These two combined create beautifully looking and user friendly websites. Back to our house example, let's say you want to build in some interactivity, some automatisation like self closing blinds, temperature control system, etc. In web development, that's where JavaScript comes into the picture.</p>
         <h4>Control flow and loops</h4>
         <p>Control flow is the order in which the computer executes statements (lines of codes) in a script. Let's say we want to cook some pancakes. Our control flow could look like this:</p><br>
         <ul class = "paragraph-list">
@@ -65,19 +65,19 @@
         <p>First we need to know what they are:</p><br>
         <h5>Array</h5>        
         <img src = "../images/array1.png" class = "printscreen__images" alt="">
-        <p>An array is a list of items stored in a variable. We can recognise an array by its square brackets [ ]. If we want to get access to what's in the array, we need to know how to target each item. Let's say we want to get 'spaghetti bolognese' (because who wouldn't??). We have to do it like this:</p><br>
-        <p><strong>favFoods[1]</strong></p><br>
-        <p>Why not <strong>favFoods[2]</strong>? Confusing right! We just have to remember that arrays are zero-indexed, so the first element of an array is at index 0. It's just the way it is.</p><br>
+        <p>An array is a list of items. We can recognise an array by its square brackets [ ]. If we want to get access to what's in the array, we need to know how to target each item. Let's say we want to get 'spaghetti bolognese' (because who wouldn't??). We have to do it like this:</p><br>
+        <p><strong class = "strong-paragraph">favFoods[1]</strong></p><br>
+        <p>Why not <strong class = "strong-paragraph">favFoods[2]</strong>? Confusing right! We just have to remember that arrays are zero-indexed, so the first element of an array is at index 0. It's just the way it is.</p><br>
         <h5>Objects</h5>   
         <img src = "../images/array2.png" class = "printscreen__images" alt="">
-        <p>An object is an unordered collection of key-value pairs. Each key-value pair is called a property. It uses curly brackets { }. If we want to access a property of an object, we use the dot notation (.). Let's say we want to get the firstName property:</p><br>
-        <p><strong>person.firstName</strong></p><br>
+        <p>An object is an unordered collection of key-value pairs. Each key-value pair is called a property. It uses curly brackets <strong class = "strong-paragraph">{ }</strong>. If we want to access a property of an object, we use the dot notation <strong class = "strong-paragraph">(.)</strong>. Let's say we want to get the firstName property:</p><br>
+        <p><strong class = "strong-paragraph">person.firstName</strong></p><br>
         <p>So in this example it would return us 'Daniela'.</p>
         <h4>Functions</h4>
-        <p>A function is a block of code designed to perform a particular task. As a first step, you have to declare the function by using the <strong>function</strong> keyword. Then give it a descriptive name followed by brackets ( ):</p>
+        <p>A function is a block of code designed to perform a particular task. As a first step, you have to declare the function by using the <strong class = "strong-paragraph">function</strong> keyword. Then give it a descriptive name followed by brackets <strong class = "strong-paragraph">( )</strong></p>
         <img src = "../images/functions1.png" class = "printscreen__images" alt="">
-        <p>No we have declared it but it won't do anything unless we "call" the function:</p><br>
-        <p><strong>greet()</strong></p><br>
+        <p>Now we have declared it but it won't do anything unless we "call" the function:</p><br>
+        <p><strong class = "strong-paragraph">greet()</strong></p><br>
         <p>So first, we need to declare (create) the function, and then we call it.</p>
         <h5>Why are functions helpful?</h5>
         <p>We use functions to break a complex problem into smaller chunks. That way our program is easier to read and understandable. We can also reuse functions and don't have to repeat our code. We can execute it as many times as we want. A rule of programming is to "never repeat yourself, never write the same thing twice".</p>
@@ -95,9 +95,9 @@
           <li class = "paragraph-list__item">document.querySelector()</li>
           <li class = "paragraph-list__item">document.querySelectorAll()</li>
         </ul><br>
-        <p>Once we select the elements we want, we can let them do stuff, like behave in a different way, change to another color, switch old text with new text. We call these events. We can add an Event Listener to our selected element:</p>
+        <p>Once we select the elements we want, we can let them do stuff, like behave in a different way, change to another color, switch old text with new text. We call these events. We can add an <strong class = "strong-paragraph">Event Listener</strong> to our selected element:</p>
         <img src = "../images/dom2.png" class = "printscreen__images" alt="">
-        <p>There are many many more Event Listeners but the "click" is probably one of the most used one</p>
+        <p>There are many many more Event Listeners but the "click" is probably one of the most used one.</p>
       </div>
     </section>
 

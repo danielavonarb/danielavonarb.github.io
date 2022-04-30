@@ -432,6 +432,10 @@ main{
   opacity: .7;
 }
 
+.strong-paragraph {
+  color: var(--clr-accent-three)
+}
+
 
 
 
