@@ -65,7 +65,7 @@ section{
 
 @media (min-width: 1200px) {
   section{
-    padding: 2em 3em;
+    padding: 1.5em 3em;
   }
 
   section:nth-child(1){
@@ -77,6 +77,10 @@ img{
   display: block;
   max-width: 100%;
   box-shadow: var(--bs);
+}
+
+figcaption{
+  font-size: 0.8em;
 }
 
 /* Typography */
@@ -436,6 +440,47 @@ main{
   color: var(--clr-accent-three)
 }
 
+/* Styling Blockquote*/
+
+
+.container_blockquote{
+  max-width: 80%;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 4em;
+  /* border: 1px solid #8be4ba;
+  border-left-width: 10px; */
+  color: #1b3026;
+  background-color: #e6e1ea;
+  box-shadow: var(--bs);
+
+}
+
+blockquote::before{
+  content: "\201c";
+  font-size: 90px;
+  color:#876f9e;
+  display: block;
+  margin-bottom: -60px;
+  margin-top: -40px;
+
+}
+
+.blockquote_text{
+  font-family: var(--ff-secondary);
+  font-style: italic;
+  padding-bottom: 0.5em;
+}
+
+.blockquote_text--credit{
+  font-family: var(--ff-primary);
+  font-weight: var(--fw-bold);
+  text-align: right;
+}
+
+.blockquote_text--credit::before{
+  content: "\2014\0020";
+}
 
 
 
