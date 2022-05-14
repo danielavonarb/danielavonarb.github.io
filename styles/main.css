@@ -440,6 +440,15 @@ main{
   color: var(--clr-accent-three)
 }
 
+#div-with-border{
+  border-bottom: solid 5px var(--clr-dark);
+  
+}
+
+#border-para{
+  margin-bottom: 3em
+}
+
 /* Styling Blockquote*/
 
 
